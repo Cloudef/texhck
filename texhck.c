@@ -393,7 +393,6 @@ static void texhckCompressDXT1RGB(
    for (i = 0; i < 16; ++i) {
       /* find the dot product of this color, to place it on the line
        * (should be [-1,1]) */
-      next_value = 0;
       dot_product =
          color_line[0] * uncompressed[i*channels+0] +
          color_line[1] * uncompressed[i*channels+1] +
